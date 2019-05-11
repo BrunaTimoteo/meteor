@@ -1,0 +1,16 @@
+<template name="tarefa">
+    <li class="{{#if checked}}checked{{/if}}">
+        <div class="row item">
+            <div class="col-10">
+                <label class="container">
+                    <input type="checkbox" checked="{{checked}}"/>
+                    <span class="checkmark"></span>
+                    <p>{{text}}</p>
+                </label>
+            </div>
+            <div class="col-2">
+                <button type="button" class="btn btn-danger delete float-right"><i class="fas fa-trash-alt"></i></button>
+            </div>
+        </div>
+    </li>
+</template>

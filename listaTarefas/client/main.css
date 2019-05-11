@@ -1,0 +1,97 @@
+.menu{
+    padding: 10px;
+}
+
+body{
+    overflow-x: hidden
+}
+
+.lista{
+    margin-top: 30px!important
+}
+ 
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  text-align: center;
+  border-radius: 4px;
+  height: 32px;
+  width: 32px;
+  background-color: #eee;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+.container input:checked ~ p {
+  text-decoration: line-through;
+}
+
+p{
+  padding-left: 30px;
+  margin-bottom: 0;
+  font-size: 1.2em
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  text-align: center
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 10px;
+  height: 20px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.new-task{
+  padding-bottom: 20px
+}
+
+body {
+  background-color: #ccc;
+  background-attachment: fixed;
+ 
+}
+
+.list-group{
+  list-style-type: none;
+}
+
+.list-group .item{
+  padding-bottom: 0
+}
+
+li .text {
+  margin-left: 10px;
+}
+ 
+li.checked .text {
+  text-decoration: line-through !important;
+}
